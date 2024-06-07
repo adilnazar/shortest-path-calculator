@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using ShortestRouteOptimizer.Data.Interfaces;
 using ShortestRouteOptimizer.Data.Loaders;
 using ShortestRouteOptimizer.Service.Interfaces;
 using ShortestRouteOptimizer.Service.Services;
@@ -8,13 +7,11 @@ try
 {
     var servicePrrovider = new ServiceCollection()
     .AddScoped<IPathOptimizerService, PathOptimizerService>()
-    .AddScoped<IGraphDataLoader, GraphDataLoader>()
     .BuildServiceProvider();
 
-    var graphLoader = servicePrrovider.GetRequiredService<IGraphDataLoader>();
     var pathOptimizerService = servicePrrovider.GetRequiredService<IPathOptimizerService>();
 
-    var nodes = graphLoader.GetNodeGraphData();
+    var nodes = GraphDataLoader.GetNodeGraphData();
 
     var validNodes = new HashSet<string> { "A", "B", "C", "D", "E", "F", "G", "H", "I" };
 
