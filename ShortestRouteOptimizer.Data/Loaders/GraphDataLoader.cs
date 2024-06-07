@@ -1,5 +1,4 @@
-﻿using ShortestRouteOptimizer.Data.Interfaces;
-using ShortestRouteOptimizer.Models.Models;
+﻿using ShortestRouteOptimizer.Models.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace ShortestRouteOptimizer.Data.Loaders
 {
-    public class GraphDataLoader : IGraphDataLoader
+    public static class GraphDataLoader
     {
         /// <summary>
-        /// 
+        /// Get Node Graph data
         /// </summary>
         /// <returns></returns>
-        public List<Node> GetNodeGraphData()
+        public static List<Node> GetNodeGraphData()
         {
             var data = new List<Node>
             {

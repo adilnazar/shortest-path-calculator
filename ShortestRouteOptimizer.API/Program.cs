@@ -22,7 +22,6 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddRouteOptimizerServiceCollections();
-builder.Services.AddRouteOptimizerDataCollections();
 
 var app = builder.Build();
 

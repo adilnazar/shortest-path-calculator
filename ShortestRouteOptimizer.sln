@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShortestRouteOptimizer.Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortestRouteOptimizer.Console", "ShortestRouteOptimizer.Console\ShortestRouteOptimizer.Console.csproj", "{DF87EE81-534B-430C-8F5B-947F8E9FAA39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortestRouteOptimizer.Test", "ShortestRouteOptimizer.Test\ShortestRouteOptimizer.Test.csproj", "{8B360DEB-315D-4A38-BEED-6721289CE69F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DF87EE81-534B-430C-8F5B-947F8E9FAA39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF87EE81-534B-430C-8F5B-947F8E9FAA39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF87EE81-534B-430C-8F5B-947F8E9FAA39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B360DEB-315D-4A38-BEED-6721289CE69F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B360DEB-315D-4A38-BEED-6721289CE69F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B360DEB-315D-4A38-BEED-6721289CE69F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B360DEB-315D-4A38-BEED-6721289CE69F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
